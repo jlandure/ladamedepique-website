@@ -1,5 +1,5 @@
 application: ladamedepique-boutique
-version: 2013-1
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -11,6 +11,13 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
+  expiration: "0d 5m"
+  
+# re-direct to index.html
+- url: /index.html(.*)
+  static_files: index.html
+  upload: index.html(.*)
+  expiration: "0d 5m"
 
 # access the static resources in the root director
 
