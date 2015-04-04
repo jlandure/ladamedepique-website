@@ -1,5 +1,5 @@
 application: ladamedepique-boutique
-version: 2
+version: 2015-04
 runtime: python27
 api_version: 1
 threadsafe: true
